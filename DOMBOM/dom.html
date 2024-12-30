@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: cornflowerblue;
+        color: aliceblue;
+        text-align: center;
+      }
+      .highlight {
+        background-color: yellow;
+        font-weight: bold;
+        color: black;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JS DOM Fun Example</h1>
+
+    <!-- EXAMPLE 1 ACESSING DOM ELEMENTS -->
+    <section id="example-1">
+      <h2>Acessing DOM Elements</h2>
+      <p id="myParagraph">This is aparagraph. click the button to change me</p>
+      <button id="changeTextButton">change Text</button>
+    </section>
+
+    <!-- Traversing DOM -->
+    <section id="example-2">
+      <h2>Traversing The DOM</h2>
+      <ul id="citiesList">
+        <li class="chai">New York</li>
+        <li>Tokyo</li>
+        <li>Paris</li>
+        <li>London</li>
+      </ul>
+      <button id="highlightFirstCity">highlight first city</button>
+    </section>
+
+    <!-- Manipulating DOM Elements -->
+    <section id="example-3">
+      <div id="coffeOrder">Order: <span id="coffeType">Latte</span></div>
+      <button id="changeOrder">chnage order to Espresso</button>
+    </section>
+
+    <!-- example 4 Creating and inserting the element 28:09 -->
+    <section id="example-4">
+      <h2>Creating and inserting the element</h2>
+      <button id="addNewItem">Add new item to shopping list</button>
+      <ul id="shoppingList">
+        <li>Bread</li>
+        <li>Milk</li>
+      </ul>
+    </section>
+
+    <!-- example 5 Removing DOM Element -->
+    <section id="example-5">
+      <h2>Removing DOM Element</h2>
+      <ul id="taskList">
+        <li>Task1</li>
+        <li>Task2</li>
+        <li>Task3</li>
+      </ul>
+      <button id="removeLastTask">Remove last task</button>
+    </section>
+
+
+    <!-- Second Part -->
+     <section id="exapmle-6">
+      <h2></h2>
+     </section>
+    <script src="domFun.js"></script>
+  </body>
+</html>
