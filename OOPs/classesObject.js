@@ -6,7 +6,7 @@ let car = {
     make:"Toyota",
     model:"Camry",
     year:2020,
-    start: function(){
+    start: function(){  //don't use arrow function bcz that don't bind bind object or instances instead of bind with lexical scope or global scope, so use normal function here
         return `${this.make} car gots started in ${this.year}`
     }
 }
