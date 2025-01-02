@@ -70,3 +70,56 @@ document
     console.log(tasklist.lastElementChild);
     tasklist.lastElementChild.remove();
   });
+
+  // Example 6
+  document.getElementById('clickMeButton').addEventListener('click', function(){
+    alert("you clicked");
+  })
+
+  // Example 7
+  document.getElementById('teaList').addEventListener('click', function(event){
+    // console.log(this);
+    console.log(event.target);
+    if(event.target && event.target.matches(".teaItem")){
+      alert("You Selected: " + event.target.textContent)
+    }
+    
+  })
+
+  // Example 8 
+  // grab the form
+  document.getElementById('feedBackForm').addEventListener('submit', function(event){
+  //  console.log(event);
+  // console.log(this);
+  //  alert("Form Submitted")
+  //  stop default behaviour of form
+    event.preventDefault();
+
+    let feedBack = document.getElementById('feedBackInput').value;
+    // console.log(feedBack);
+
+    let feedBackDisplay = document.getElementById('feedBackDisplay');
+    // console.log(feedBackDisplay);
+
+    feedBackDisplay.textContent = `Feedback is: ${feedBack}`
+    
+    // let newItem = document.createElement("p");
+    // newItem.textContent = feedBack;
+
+    // feedBackDisplay.appendChild(newItem)
+
+  })
+
+  // Example 9
+  document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById('domStatus').textContent = `DOM Fully Loaded`
+  })
+
+
+  // Example 10
+  document.getElementById('toggleHighLight').addEventListener('click', function(){
+    let descriptionText = document.getElementById('descriptionText')
+    // console.log(descriptionText);
+    // descriptionText.classList.add('highlight') //highlight is css class
+    descriptionText.classList.toggle('highlight')
+  })
