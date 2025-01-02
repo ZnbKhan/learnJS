@@ -9,7 +9,6 @@ Task 3: Static Methods in Classes
 Add a static method isVehicle(obj) to the Vehicle class that checks if a given object is an instance of Vehicle. The method should return true if the object is a Vehicle or a subclass of Vehicle, and false otherwise.
 
 
-
 */
 
 class Vehicle{
