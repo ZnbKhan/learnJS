@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalPriceDisplay = document.getElementById("total-price");
     const checkOutBtn = document.getElementById("checkout-btn");
   
-    products.forEach((product) => {
+    products.forEach((product) => { 
       const productDiv = document.createElement("div");
       productDiv.classList.add("product");
       productDiv.innerHTML = `
